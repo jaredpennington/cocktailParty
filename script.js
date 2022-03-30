@@ -10,7 +10,8 @@ searchInput.addEventListener("input", (e) => {
   users.forEach(user => {
     const isVisable = 
     user.name.toLowerCase().includes(value) ||
-    user.category.toLowerCase().includes(value) 
+    user.category.toLowerCase().includes(value) ||
+    user.price.toLowerCase().includes(value)
     user.element.classList.toggle("hide", !isVisable)
   })
 })
@@ -22,9 +23,11 @@ fetch("https://jcv12.github.io/drinksAlcho/")
       const card = userCardTemplate.content.cloneNode(true).children[0]
       const header = card.querySelector("[data-header]")
       const body = card.querySelector("[data-body]")
+      const nav = card.querySelector("[data-nav]")
       header.textContent = user.name
       body.textContent = user.category
+      nav.textContent = user.price
       userCardContainer.append(card)
-      return { name: user.name, category: user.category, element: card }
+      return { name: user.name, category: user.category, price: user.price, element: card }
     })
   })
