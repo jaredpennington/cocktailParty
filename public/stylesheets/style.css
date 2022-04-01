@@ -15,12 +15,44 @@
     text-decoration: none;
     font-family: 'BIZ UDMincho', serif;
     color: #d9dad7;
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 15px rgba(217,218,215,1),
+    0 0 20px rgba(217,218,215,1),
+    0 0 30px rgba(217,218,215,1),
+    0 0 40px rgba(217,218,215,1),
+    0 0 65px rgba(217,218,215,1);
     font-weight: bold;
     transition: color .1s;
+    animation: flicker 1.5s infinite alternate;     
+  }
+
+  @keyframes flicker {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px rgba(217,218,215,1),
+        0 0 80px rgba(217,218,215,1),
+        0 0 90px rgba(217,218,215,1),
+        0 0 100px rgba(217,218,215,1),
+        0 0 150px rgba(217,218,215,1);
+    
+    }
+    
+    20%, 24%, 55%{        
+        text-shadow: none;
+    }    
   }
   
+  
   a:hover {
-    color: #3486eb;
+    color: rgba(194,77,44,1);
   }
   
   button {
@@ -35,7 +67,7 @@
   }
   
   button:hover {
-    background-color: #3486eb;
+    background-color: rgba(194,77,44,1);
   }
   
   .post-list {
@@ -91,6 +123,10 @@
     
   }
   
+  cocktail-party {
+
+  }
+
   header h1 {
     font-size: 3em;
     color: #fff5eb;
@@ -101,6 +137,7 @@
     padding: 2% 4%;
     background: rgb(26,38,57,1);
     color: rgba(217,218,215,1);
+
   }
   
   .btn-no-style {
@@ -118,7 +155,7 @@
   
   .btn-no-style:hover {
     background: none;
-    color: #3486eb;
+    color: rgba(194,77,44,1)
   }
   
   .delete-post-btn {
@@ -126,7 +163,7 @@
   }
   
   .delete-post-btn:hover {
-    background-color: #ff643d;
+    background-color: rgba(194,77,44,1);
   }
   
   .post {
