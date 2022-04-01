@@ -7,13 +7,14 @@
     height: 100%;
     padding: 0;
     margin: 0;
-    font-family: sans-serif;
-    color: #333;
+    font-family: 'DM Sans', sans-serif;
+    color: #333333;
   }
   
   a {
     text-decoration: none;
-    color:black;
+    font-family: 'BIZ UDMincho', serif;
+    color: #d9dad7;
     font-weight: bold;
     transition: color .1s;
   }
@@ -44,8 +45,9 @@
   
   textarea, input {
     padding: .5%;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 10px outset #000000;
+    border-radius: 40px;
+
   }
   
   textarea:focus, input:focus {
@@ -71,7 +73,8 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    background-color: rgb(214, 208, 208);
+    background: linear-gradient(90deg, rgba(26,38,57,1) 0%, rgba(62,74,97,1) 20%, rgba(194,77,44,1) 40%, rgba(217,218,215,1) 100%);
+
    
   }
   
@@ -81,9 +84,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 1%;
-    background-color: rgb(182, 8, 8);
-    border-radius: 20px;
-    border: black solid 5px;
+    background: linear-gradient(90deg, rgba(26,38,57,1) 0%, rgba(62,74,97,1) 20%, rgba(194,77,44,1) 40%, rgba(217,218,215,1) 100%);
+    border: 10px outset #d9dad7;
+    border-radius: 40px;
     margin: 10px
     
   }
@@ -96,6 +99,8 @@
   main {
     flex: 1;
     padding: 2% 4%;
+    background: rgb(26,38,57,1);
+    color: rgba(217,218,215,1);
   }
   
   .btn-no-style {
@@ -127,10 +132,10 @@
   .post {
     margin-bottom: 2%;
     line-height: 150%;
-    border: black solid 5px;
-    border-radius: 20px;
+    border: 10px outset #d9dad7;
+    border-radius: 40px;
     padding: 5px;
-    background-color:#d41414;
+    background-color: rgba(62,74,97,1);
   }
   
   .post .title span {
