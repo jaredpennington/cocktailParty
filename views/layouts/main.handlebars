@@ -1,43 +1,44 @@
-<!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cocktail Party</title>
-  <link rel="stylesheet" href="/stylesheets/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=BIZ+UDMincho&display=swap" rel="stylesheet">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cocktail Party</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=BIZ+UDMincho&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-  <div class="wrapper">
-    <header>
-      <h1>
-        {{!--we should link cocktail party title to the dashboard as well. ex facebooks main dashbord has its feed AND a way to make a new post.--}}
-      <a href="/" class="cocktail-party">Cocktail Party!</a>
-    </h1>
-    <nav>
-      {{#if loggedIn}}
-      <a href="/dashboard">dashboard</a>
-        <button id="logout" class="btn-no-style">logout</button>
-      {{else}}
-      <a href="/login">login</a>
-      {{/if}}
-    </nav>
-    </header>
-    <main>
-      {{{ body }}}
-    </main>
-    <footer>
-      Thanks for drinking!
-    </footer>
-  </div>
-  {{#if loggedIn}}
- <script src="/javascript/logout.js"></script>
- {{/if}}
-</body>
-
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>
+          {{!we should link cocktail party title to the dashboard as well. ex facebooks main dashbord has its feed AND a way to make a new post.}}
+          <a href="/" class="cocktail-party">Cocktail Party!</a>
+        </h1>
+        <nav>
+          {{#if loggedIn}}
+            <a href="/dashboard">dashboard</a>
+            <button id="logout" class="btn-no-style">logout</button>
+          {{else}}
+            <a href="/login">login</a>
+          {{/if}}
+        </nav>
+      </header>
+      <main>
+        {{{body}}}
+      </main>
+      <footer>
+        Thanks for drinking!
+      </footer>
+    </div>
+    {{#if loggedIn}}
+      <script src="/javascript/logout.js"></script>
+    {{/if}}
+  </body>
 
 </html>
