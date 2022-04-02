@@ -9,6 +9,7 @@ router.get('/', (req, res) => {
         'id',
         'post_content',
         'title',
+        'photo',
         'created_at',
      
       ],
@@ -60,6 +61,7 @@ router.get('/', (req, res) => {
         'id',
         'post_content',
         'title',
+        'photo',
         'created_at',
 
       ],
