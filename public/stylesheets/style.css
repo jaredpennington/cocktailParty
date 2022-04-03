@@ -11,7 +11,7 @@
     color: #333333;
   }
   
-  a {
+  a.cocktail-party {
     text-decoration: none;
     font-family: 'BIZ UDMincho', serif;
     color: #d9dad7;
@@ -77,14 +77,14 @@
   
   textarea, input {
     padding: .5%;
-    border: 10px outset #000000;
+    border: 2px outset #000000;
     border-radius: 40px;
 
   }
   
   textarea:focus, input:focus {
     outline: none;
-    border: 1px solid #3486eb;
+    border: 2px solid #3486eb;
   }
   
   textarea {
@@ -123,10 +123,6 @@
     
   }
   
-  cocktail-party {
-
-  }
-
   header h1 {
     font-size: 3em;
     color: #fff5eb;
