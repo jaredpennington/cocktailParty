@@ -13,6 +13,7 @@ router.get('/', withAuth, (req, res) => {
         'id',
         'post_content',
         'title',
+        'photo',
         'created_at',
      
       ],
@@ -47,6 +48,7 @@ router.get('/', withAuth, (req, res) => {
         'id',
         'post_content',
         'title',
+        'photo',
         'created_at',
      
       ],
