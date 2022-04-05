@@ -1,14 +1,16 @@
 <article class="post">
-  <div class="title">
-    <h3 class="post_title">{{title}}</h3>
-    <p class="content">{{post_content}}</p>
-    
-    <img class= 'img' src={{photo}} alt="Cocktail Picture">
+  <div class="post-wrapper">
+    <div class="title">
+      <h3 class="post_title">{{title}}</h3>
+      <p class="content">{{post_content}}</p>
+      
+      <img class= 'img' src={{photo}} alt="Cocktail Picture">
 
+    </div>
+    <div class="meta">
+    by {{user.username}} on {{format_date created_at}}
+    |
+    <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
+    </div>
   </div>
-<div class="meta">
-  by {{user.username}} on {{format_date created_at}}
-  |
-  <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
-</div>
 </article>
