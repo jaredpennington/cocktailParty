@@ -1,54 +1,55 @@
 * {
-    box-sizing: border-box;
-   
-  }
+  box-sizing: border-box;
   
-  body, html {
+}
+
+.mainpage {
+  font-family: 'DM Sans', sans-serif;
     height: 100%;
     padding: 0;
     margin: 0;
-    font-family: 'DM Sans', sans-serif;
-    color: #333333;
-  }
-  
-  a.cocktail-party {
-    text-decoration: none;
-    font-family: 'BIZ UDMincho', serif;
-    color: #d9dad7;
-    text-shadow:
-    0 0 7px #fff,
-    0 0 10px #fff,
-    0 0 21px #fff,
-    0 0 15px rgba(217,218,215,1),
-    0 0 20px rgba(217,218,215,1),
-    0 0 30px rgba(217,218,215,1),
-    0 0 40px rgba(217,218,215,1),
-    0 0 65px rgba(217,218,215,1);
-    font-weight: bold;
-    transition: color .1s;
-    animation: flicker 1.5s infinite alternate;     
+    background: #732e05;
+
   }
 
-  @keyframes flicker {
-    
-    0%, 18%, 22%, 25%, 53%, 57%, 100% {
-  
-        text-shadow:
-        0 0 4px #fff,
-        0 0 11px #fff,
-        0 0 19px #fff,
-        0 0 40px rgba(217,218,215,1),
-        0 0 80px rgba(217,218,215,1),
-        0 0 90px rgba(217,218,215,1),
-        0 0 100px rgba(217,218,215,1),
-        0 0 150px rgba(217,218,215,1);
-    
-    }
-    
-    20%, 24%, 55%{        
-        text-shadow: none;
-    }    
+  .background-img-one {
+    background-image: url(/images/DSC_3584.JPG);
+    background-size: cover;
+    /* position: sticky; */
+    background-position: center;
+    background-repeat: repeat;
+    width:100%;
+    height: auto;
   }
+
+  .background-img-two {
+    background-image: url(/images/DSC_3598.JPG);
+    background-size: cover;
+    /* position: sticky; */
+    background-position: center;
+    background-repeat: repeat;
+    width:100%;
+    height: auto;
+  }
+
+  .background-img-three {
+    background-image: url(/images/DSC_3596.JPG);
+    background-size: cover;
+    /* position: sticky; */
+    background-position: center;
+    background-repeat: repeat;
+    width:100%;
+    height: auto;
+  }
+
+  /* body, html {
+    /* color: #333333; */
+   
+  
+  /* .cocktail-party {
+
+
+  } */
   
   
   a:hover {
@@ -105,33 +106,36 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(90deg, rgba(26,38,57,1) 0%, rgba(62,74,97,1) 20%, rgba(194,77,44,1) 40%, rgba(217,218,215,1) 100%);
+    /* background: linear-gradient(90deg, rgba(26,38,57,1) 0%, rgba(62,74,97,1) 20%, rgba(194,77,44,1) 40%, rgba(217,218,215,1) 100%); */
 
    
   }
   
   header {
-    border-bottom: 1px solid #ccc;
+    /* border-bottom: 1px solid #ccc; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 1%;
-    background: linear-gradient(90deg, rgba(26,38,57,1) 0%, rgba(62,74,97,1) 20%, rgba(194,77,44,1) 40%, rgba(217,218,215,1) 100%);
-    border: 10px outset #d9dad7;
-    border-radius: 40px;
-    margin: 10px
+    background: #732e05;
+    border-bottom: #000000 solid 10px;
+    /* background: linear-gradient(90deg, rgba(26,38,57,1) 0%, rgba(62,74,97,1) 20%, rgba(194,77,44,1) 40%, rgba(217,218,215,1) 100%); */
+    /* border: 10px outset #d9dad7;
+    border-radius: 40px; */
+    margin: 0;
     
   }
   
   header h1 {
-    font-size: 3em;
-    color: #fff5eb;
+    font-size: 2em;
+  
+    color: rgba(217,218,215,1);
   }
   
   main {
     flex: 1;
-    padding: 2% 4%;
-    background: rgb(26,38,57,1);
+    /* padding: 2% 4%; */
+    /* background: rgb(26,38,57,1); */
     color: rgba(217,218,215,1);
 
   }
@@ -164,11 +168,13 @@
   
   .post {
     margin-bottom: 2%;
+    
     line-height: 150%;
     border: 10px outset #d9dad7;
     border-radius: 40px;
-    padding: 5px;
-    background-color: rgba(62,74,97,1);
+    /* padding: 5px; */
+    background: #732e05;
+    opacity: 50%;
   }
   
   .post .title span {
@@ -179,7 +185,8 @@
   
   .edit-link {
     display: block;
-    margin: -1.5% 0 2% 0;
+    margin: 0 0 2% 0;
+    padding-bottom: 30px;
   }
   
   
@@ -217,8 +224,9 @@
   }
   
   footer {
-    border-top: 1px solid #ccc;
+    border-top: 1px solid rgb(0, 0, 0);
     display: flex;
+    background-color: #732e05;
     justify-content: center;
     padding: 1%;
     font-size: 110%;
@@ -259,17 +267,14 @@
   }
 
 .login-form{
-  border: black solid 2px;
   text-align: center;
-  border-radius: 20px;
-  padding: 0px;
+  padding-top: 20px;
   margin:50px
   
 }
 .signup-form{
-  border: black solid 2px;
   text-align: center;
-  border-radius: 20px;
+  padding: 20px;
   margin: 50px;
 
 }
