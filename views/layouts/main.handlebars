@@ -12,40 +12,41 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
-  <body class="mainpage">
-    <div class="wrapper">
-      <div class="header">
-        <header>
-          <h1 class="uk-heading-medium">
-            {{!we should link cocktail party title to the dashboard as well. ex facebooks main dashbord has its feed AND a way to make a new post.}}
-            <a href="/" class="cocktail-party">Cocktail Party!</a>
-          </h1>
-          <nav>
-            {{#if loggedIn}}
-              <a href="/dashboard">dashboard</a>
-              <a<button id="logout" class="btn-no-style">logout</button></a>
-            {{else}}
-              <a href="/login">login</a>
-            {{/if}}
-          </nav>
-      </header>
-      </div>
-      <main>
-        {{{body}}}
-      </main>
-      <footer>
-        Thanks for drinking!
-      </footer>
-    </div>
-    {{#if loggedIn}}
-      <script src="/javascript/logout.js"></script>
-    {{/if}}
+
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>
+      <a href="/">Cocktail Party!</a>
+    </h1>
+    <nav>
+      <a href="/brewery">brewery</a>
+        <button>Search For Brewery</button>
+      {{#if loggedIn}}
+      <a href="/dashboard">dashboard</a>
+        <button id="logout" class="btn-no-style">logout</button>
+      {{else}}
+      <a href="/login">login</a>
+      {{/if}}
+    </nav>
+    </header>
+    <main>
+      {{{ body }}}
+    </main>
+    <footer>
+      Thanks for drinking!
+    </footer>
+  </div>
+  {{#if loggedIn}}
+ <script src="/javascript/logout.js"></script>
+ {{/if}}
   </body>
 <script src="https://apps.elfsight.com/p/platform.js" defer></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="/javascript/search.js"></script>
 <script src="js/uikit.min.js"></script>
 <script src="js/uikit-icons.min.js"></script>
+
 
 <div class="elfsight-app-203dcbc2-f2a2-45be-b518-26e7a771de37"></div>
 </html>
