@@ -92,10 +92,10 @@ ol {
     border: 2px solid #3486eb;
   }
   
-  textarea {
+  /* textarea {
     min-width: 40%;
     min-height: 100px;
-  }
+  } */
   
   form > div {
     margin-bottom: 2%;
@@ -200,7 +200,7 @@ ol {
   
   
   .comment-form {
-    margin-bottom: 5%;
+    /* margin-bottom: 5%; */
     border-radius: 15px;
   }
   
