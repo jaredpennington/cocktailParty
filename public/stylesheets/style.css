@@ -173,6 +173,7 @@ ol {
   
   .post {
     margin-bottom: 2%;
+    margin-top: 2%;
     line-height: 150%;
     border: 10px outset #d9dad7;
     border-radius: 40px;
@@ -282,13 +283,13 @@ ol {
 .login-form{
   text-align: center;
   padding-top: 20px;
-  margin:50px
+  /* margin:50px */
   
 }
 .signup-form{
   text-align: center;
   padding: 20px;
-  margin: 50px;
+  /* margin: 50px; */
 
 }
 .img{
