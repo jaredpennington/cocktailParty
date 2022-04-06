@@ -1,5 +1,6 @@
+<div class="background-img-one">
 <section>
-  <h2>Create New Post</h2>
+  <h2 style="margin-top: 0px; margin-bottom: 10px; margin-left: 20px;">Create New Post</h2>
 
   <form class="new-post-form">
     <div>
@@ -8,14 +9,17 @@
     </div>
     <div>
       <label for="post-content">Content</label>
-      <input id="post-content" name="post-content" />
+      <textarea id="post-content" name="post-content"></textarea>
+    </div>
+      <div>
+      <label for="photo">Photo</label>
+      <input id="photo" name="photo" />
     </div>
     <button type="submit" class="btn">Create</button>
   </form>
-</section>
+  </section>
+  {{#if posts.length}}
 
-{{#if posts.length}}
-<section>
   <h2>Your Posts</h2>
   <ol>
     {{#each posts as |post|}}
@@ -25,7 +29,9 @@
     </li>
     {{/each}}
   </ol>
-</section>
+   
+  </section>
 {{/if}}
+</div>
 
 <script src="/javascript/add-post.js"></script>

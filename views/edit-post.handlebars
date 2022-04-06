@@ -1,3 +1,4 @@
+<div class="background-img-one">
 <article>
   <a href="/dashboard"> &larr; Back to dashboard</a>
   <h2>
@@ -9,7 +10,9 @@
       <input name="post-title" type="text" value="{{post.title}}" />
       <br>
       <h4>Content</h4>
-      <input name="post-content" type="text" value="{{post.post_content}}" />
+      <textarea name="post-content" type="text" value="{{post.post_content}}"></textarea>
+       <h4>Photo</h4>
+      <input name="photo" type="img" value="{{post.photo}}" />
      
     </div>
     <div>
@@ -31,6 +34,7 @@
     <button type="submit">add comment</button>
   </div>
 </form>
+</div>
 
 <script src="/javascript/edit-post.js"></script>
 <script src="/javascript/delete-post.js"></script>

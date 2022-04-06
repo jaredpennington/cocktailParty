@@ -1,25 +1,63 @@
 * {
-    box-sizing: border-box;
-   
-  }
+  box-sizing: border-box;
   
-  body, html {
+}
+
+ol {
+  margin-bottom: 0px !important;
+}
+
+.mainpage {
+  font-family: 'DM Sans', sans-serif;
     height: 100%;
     padding: 0;
     margin: 0;
-    font-family: sans-serif;
-    color: #333;
+    background: #732e05;
+
   }
+
+  .background-img-one {
+    background-image: url(/images/DSC_3584.JPG);
+    background-size: cover;
+    /* position: sticky; */
+    background-position: center;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    width:100%;
+    min-height: 100vh;
+  }
+
+  .background-img-two {
+    background-image: url(/images/DSC_3598.JPG);
+    background-size: cover;
+    /* position: sticky; */
+    background-position: center;
+    background-repeat: repeat;
+    width:100%;
+    height: auto;
+  }
+
+  .background-img-three {
+    background-image: url(/images/DSC_3596.JPG);
+    background-size: cover;
+    /* position: sticky; */
+    background-position: center;
+    background-repeat: repeat;
+    width:100%;
+    min-height: 100vh;
+  }
+
+  /* body, html {
+    /* color: #333333; */
+   
   
-  a {
-    text-decoration: none;
-    color:black;
-    font-weight: bold;
-    transition: color .1s;
-  }
+  /* .cocktail-party {
+
+
+  } */
   
   a:hover {
-    color: #3486eb;
+    color: rgba(194,77,44,1);
   }
   
   button {
@@ -34,7 +72,7 @@
   }
   
   button:hover {
-    background-color: #3486eb;
+    background-color: rgba(194,77,44,1);
   }
   
   .post-list {
@@ -44,22 +82,24 @@
   
   textarea, input {
     padding: .5%;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 2px outset #000000;
+    border-radius: 40px;
+
   }
   
   textarea:focus, input:focus {
     outline: none;
-    border: 1px solid #3486eb;
+    border: 2px solid #3486eb;
   }
   
-  textarea {
+  /* textarea {
     min-width: 40%;
     min-height: 100px;
-  }
+  } */
   
   form > div {
     margin-bottom: 2%;
+    padding-left: 25px;
   }
   
   form label {
@@ -71,31 +111,39 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    background-color: rgb(214, 208, 208);
+    /* background: linear-gradient(90deg, rgba(26,38,57,1) 0%, rgba(62,74,97,1) 20%, rgba(194,77,44,1) 40%, rgba(217,218,215,1) 100%); */
+
    
   }
   
   header {
-    border-bottom: 1px solid #ccc;
+    /* border-bottom: 1px solid #ccc; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 1%;
-    background-color: rgb(182, 8, 8);
-    border-radius: 20px;
-    border: black solid 5px;
-    margin: 10px
-    
+    background: #732e05;
+    border-bottom: #000000 solid 10px;
+    /* background: linear-gradient(90deg, rgba(26,38,57,1) 0%, rgba(62,74,97,1) 20%, rgba(194,77,44,1) 40%, rgba(217,218,215,1) 100%); */
+    /* border: 10px outset #d9dad7;
+    border-radius: 40px; */
+    margin: 0;
+    font-family: "Sofia", sans-serif;
+  font-size: 30px;
   }
   
   header h1 {
-    font-size: 3em;
-    color: #fff5eb;
+    font-size: 2em;
+  
+    color: rgba(217,218,215,1);
   }
   
   main {
     flex: 1;
-    padding: 2% 4%;
+    /* padding: 2% 4%; */
+    /* background: rgb(26,38,57,1); */
+    color: rgba(217,218,215,1);
+
   }
   
   .btn-no-style {
@@ -113,7 +161,7 @@
   
   .btn-no-style:hover {
     background: none;
-    color: #3486eb;
+    color: rgba(194,77,44,1)
   }
   
   .delete-post-btn {
@@ -121,16 +169,23 @@
   }
   
   .delete-post-btn:hover {
-    background-color: #ff643d;
+    background-color: rgba(194,77,44,1);
   }
   
   .post {
     margin-bottom: 2%;
+    margin-top: 2%;
     line-height: 150%;
-    border: black solid 5px;
-    border-radius: 20px;
-    padding: 5px;
-    background-color:#d41414;
+    border: 10px outset #d9dad7;
+    border-radius: 40px;
+    /* padding: 5px; */
+    background: rgb(115, 46, 5, .4);
+  }
+  
+
+  .post-wrapper {
+    position: relative;
+    z-index: 1;
   }
   
   .post .title span {
@@ -141,12 +196,12 @@
   
   .edit-link {
     display: block;
-    margin: -1.5% 0 2% 0;
+    padding-bottom: 30px;
   }
   
   
   .comment-form {
-    margin-bottom: 5%;
+    /* margin-bottom: 5%; */
     border-radius: 15px;
   }
   
@@ -170,6 +225,7 @@
   
   .new-post-form input {
     width: 300px;
+    padding-left: 10px;
     border: black solid 2px;
   }
   
@@ -179,12 +235,18 @@
   }
   
   footer {
-    border-top: 1px solid #ccc;
+    border-top: 1px solid rgb(0, 0, 0);
     display: flex;
+    background-color: #732e05;
     justify-content: center;
     padding: 1%;
+    bottom: 0;
+    width: 100%;
+    position: sticky;
     font-size: 110%;
+    font-family: "Sofia", sans-serif;
   }
+
   .post_title {
     background: none;
     border: none;
@@ -221,17 +283,17 @@
   }
 
 .login-form{
-  border: black solid 2px;
   text-align: center;
-  border-radius: 20px;
-  padding: 0px;
-  margin:50px
+  padding-top: 20px;
+  /* margin:50px */
   
 }
 .signup-form{
-  border: black solid 2px;
   text-align: center;
-  border-radius: 20px;
-  margin: 50px;
+  padding: 20px;
+  /* margin: 50px; */
 
+}
+.img{
+  width: 15%;
 }
