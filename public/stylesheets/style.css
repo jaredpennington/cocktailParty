@@ -92,10 +92,10 @@ ol {
     border: 2px solid #3486eb;
   }
   
-  textarea {
+  /* textarea {
     min-width: 40%;
     min-height: 100px;
-  }
+  } */
   
   form > div {
     margin-bottom: 2%;
@@ -174,6 +174,7 @@ ol {
   
   .post {
     margin-bottom: 2%;
+    margin-top: 2%;
     line-height: 150%;
     border: 10px outset #d9dad7;
     border-radius: 40px;
@@ -200,7 +201,7 @@ ol {
   
   
   .comment-form {
-    margin-bottom: 5%;
+    /* margin-bottom: 5%; */
     border-radius: 15px;
   }
   
@@ -244,7 +245,7 @@ ol {
     position: sticky;
     font-size: 110%;
     font-family: "Sofia", sans-serif;
-    }
+  }
 
   .post_title {
     background: none;
@@ -284,13 +285,13 @@ ol {
 .login-form{
   text-align: center;
   padding-top: 20px;
-  margin:50px
+  /* margin:50px */
   
 }
 .signup-form{
   text-align: center;
   padding: 20px;
-  margin: 50px;
+  /* margin: 50px; */
 
 }
 .img{
