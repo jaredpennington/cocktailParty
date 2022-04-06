@@ -128,7 +128,8 @@ ol {
     /* border: 10px outset #d9dad7;
     border-radius: 40px; */
     margin: 0;
-    
+    font-family: "Sofia", sans-serif;
+  font-size: 30px;
   }
   
   header h1 {
@@ -243,6 +244,7 @@ ol {
     width: 100%;
     position: sticky;
     font-size: 110%;
+    font-family: "Sofia", sans-serif;
   }
 
   .post_title {
