@@ -51,10 +51,11 @@ ol {
     /* color: #333333; */
    
   
-  /* .cocktail-party {
-
-
-  } */
+  .cocktail-party {
+    color: #000000;
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+  }
   
   a:hover {
     color: rgba(194,77,44,1);
@@ -92,10 +93,10 @@ ol {
     border: 2px solid #3486eb;
   }
   
-  textarea {
+  /* textarea {
     min-width: 40%;
     min-height: 100px;
-  }
+  } */
   
   form > div {
     margin-bottom: 2%;
@@ -141,7 +142,7 @@ ol {
     flex: 1;
     /* padding: 2% 4%; */
     /* background: rgb(26,38,57,1); */
-    color: rgba(217,218,215,1);
+    color: #ffffff;
 
   }
   
@@ -195,6 +196,7 @@ ol {
   .edit-link {
     display: block;
     padding-bottom: 30px;
+    color: #c0c0c0;
   }
   
   
@@ -279,18 +281,18 @@ ol {
     font-size:small;
   }
 
-.login-form{
+/* .login-form{
   text-align: center;
   padding-top: 20px;
   margin:50px
   
-}
-.signup-form{
+} */
+/* .signup-form{
   text-align: center;
   padding: 20px;
   margin: 50px;
 
-}
+} */
 .img{
   width: 15%;
 }

@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="/stylesheets/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDMincho&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Roboto+Mono:ital,wght@1,100&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
@@ -24,10 +24,10 @@
           </h1>
           <nav>
             {{#if loggedIn}}
-              <a href="/dashboard">dashboard</a>
+              <a href="/dashboard"class="cocktail-party">dashboard</a>
               <button id="logout" class="btn-no-style">logout</button>
             {{else}}
-              <a href="/login">login</a>
+              <a href="/login" class="cocktail-party" >login</a>
             {{/if}}
           </nav>
       </header>
@@ -49,5 +49,7 @@
 <script src="js/uikit.min.js"></script>
 <script src="js/uikit-icons.min.js"></script>
 
-<div class="elfsight-app-203dcbc2-f2a2-45be-b518-26e7a771de37"></div>
+
+{{!-- <div class="elfsight-app-2ea16cd0-afd8-4d49-bdb2-f811dd776d65"></div> --}}
+
 </html>
