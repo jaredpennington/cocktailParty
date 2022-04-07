@@ -93,10 +93,10 @@ ol {
     border: 2px solid #3486eb;
   }
   
-  textarea {
+  /* textarea {
     min-width: 40%;
     min-height: 100px;
-  }
+  } */
   
   form > div {
     margin-bottom: 2%;
@@ -142,7 +142,7 @@ ol {
     flex: 1;
     /* padding: 2% 4%; */
     /* background: rgb(26,38,57,1); */
-    color: rgba(217,218,215,1);
+    color: #ffffff;
 
   }
   
@@ -196,6 +196,7 @@ ol {
   .edit-link {
     display: block;
     padding-bottom: 30px;
+    color: #c0c0c0;
   }
   
   
