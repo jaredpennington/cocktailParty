@@ -208,12 +208,17 @@ ol {
   .comment {
     padding: 1%;
     margin-bottom: 1%;
-    border:black solid 1px;
+    /* border:black solid 1px; */
     border-radius: 20px;
   }
   
   .comment:nth-child(odd) {
-    background-color: #ec9d93;
+    /* background-color: #ec9d93; */
+    font-size: 90%;
+    margin-bottom: .5%;
+  
+    color:white;
+   
   }
   
   .comment .meta {
