@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/stylesheets/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<<<<<<< HEAD
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
@@ -41,6 +42,42 @@
   {{#if loggedIn}}
  <script src="/javascript/logout.js"></script>
  {{/if}}
+=======
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Roboto+Mono:ital,wght@1,100&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body class="mainpage">
+    <div class="wrapper">
+      <div class="header">
+        <header>
+          <h1 class="uk-heading-medium">
+            {{!we should link cocktail party title to the dashboard as well. ex facebooks main dashbord has its feed AND a way to make a new post.}}
+            <a href="/" class="cocktail-party">Cocktail Party!</a>
+          </h1>
+          <nav>
+            {{#if loggedIn}}
+              <a href="/dashboard"class="cocktail-party">dashboard</a>
+              <button id="logout" class="btn-no-style">logout</button>
+            {{else}}
+              <a href="/login" class="cocktail-party" >login</a>
+            {{/if}}
+          </nav>
+      </header>
+      </div>
+      <main>
+        {{{body}}}
+      </main>
+      <footer>
+        Thanks for drinking!
+      </footer>
+    </div>
+    {{#if loggedIn}}
+      <script src="/javascript/logout.js"></script>
+    {{/if}}
+>>>>>>> main
   </body>
 <script src="https://apps.elfsight.com/p/platform.js" defer></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -49,5 +86,10 @@
 <script src="js/uikit-icons.min.js"></script>
 
 
+<<<<<<< HEAD
 {{!-- <div class="elfsight-app-203dcbc2-f2a2-45be-b518-26e7a771de37"></div> --}}
+=======
+<div class="elfsight-app-2ea16cd0-afd8-4d49-bdb2-f811dd776d65"></div>
+
+>>>>>>> main
 </html>
