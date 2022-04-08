@@ -5,6 +5,15 @@
 
 ol {
   margin-bottom: 0px !important;
+  list-style-type: none;
+}
+
+h2 {
+  background-color: rgba(217,218,215,.6);
+  width: fit-content;
+  padding: 3px;
+  border-radius: 15px;
+  border: solid 2px black;
 }
 
 .mainpage {
@@ -34,7 +43,7 @@ ol {
     background-position: center;
     background-repeat: repeat;
     width:100%;
-    height: auto;
+    min-height: 100vh;
   }
 
   .background-img-three {
@@ -210,10 +219,12 @@ ol {
     margin-bottom: 1%;
     border:black solid 1px;
     border-radius: 20px;
+    width: 50%;
+    margin: 0 auto;
   }
   
   .comment:nth-child(odd) {
-    background-color: #ec9d93;
+    background-color: rgba(58, 126, 38, 0.5);
   }
   
   .comment .meta {
