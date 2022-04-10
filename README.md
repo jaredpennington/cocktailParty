@@ -1,5 +1,17 @@
 # Cocktail Party!
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-success.svg)](https://mit-license.org/)
+
+## Table of Contents
+1. [User Story](#User)
+2. [Description](#Description)
+3. [Links](#Links)
+4. [Technology](#Technology)
+5. [Authors](#Authors)
+6. [Version History](#Version)
+7. [License](#License)
+
+
 
 ## User Story
 
@@ -16,6 +28,26 @@ active link: https://cocktail-party-jp-ac.herokuapp.com/
 
 github repo link: https://github.com/jaredpennington/cocktailParty
 
+![screenshot](./public/images/Cocktail%20Party%20(3).png),
+![screenshot](./public/images/Cocktail%20Party%20(4).png),
+![screenshot](./public/images/Cocktail%20Party%20(5).png),
+![screenshot](./public/images/Cocktail%20Party%20(6).png),
+
+
+## Technology
+* HTML
+* CSS
+* Javascript
+* Node.js
+* sequalize
+* Msql2
+* dotenv package
+* express.js
+* express-sessions
+* express-handlebars
+* days.js
+* bcrypt
+* UIKIT
 
 ## Authors
 
@@ -38,3 +70,7 @@ John V
 
 - 0.1
   - Initial Release
+
+## License
+
+MIT License -https://mit-license.org/ - A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
